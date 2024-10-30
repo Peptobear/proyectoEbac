@@ -1,0 +1,47 @@
+$product-primary: #0A74DA;
+$product-font: 'Poppins', sans-serif;
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    font-family: $product-font;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+
+    &__img img {
+        width: 200px;
+        height: auto;
+    }
+
+    &__body {
+    padding: 1rem;
+
+        &__title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        &__description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background-color: $product-primary;
+            border: none;
+            &:hover {
+                background-color: darken($product-primary, 10%);
+            }
+        }
+    }
+}
